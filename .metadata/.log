@@ -73,3 +73,170 @@ END
 
 !ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-18 12:49:48.521
 !MESSAGE Classpath changed for project: user-mgmt
+
+!ENTRY org.eclipse.jface 2 0 2025-03-18 12:59:26.078
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-03-18 12:59:26.078
+!MESSAGE A conflict occurred for CTRL+SHIFT+C:
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand,Toggle Line Comment,
+		,
+		Category(org.eclipse.tm4e.languageconfiguration.category,TM4E Language Configuration,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.tm4e.languageconfiguration.toggleLineCommentCommand"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(CTRL+SHIFT+C,
+	ParameterizedCommand(Command(org.springframework.tooling.boot.ls.ToggleComment,Toggle Comment,
+		,
+		Category(org.springframework.ide.eclipse.commands,Spring Generic Text Editor,Spring Language Server Commands,true),
+		WorkbenchHandlerServiceHandler("org.springframework.tooling.boot.ls.ToggleComment"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-18 17:59:42.270
+!MESSAGE Classpath changed for project: user-mgmt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-18 17:59:42.365
+!MESSAGE Classpath changed for project: user-mgmt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-18 17:59:44.844
+!MESSAGE Classpath changed for project: user-mgmt
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-03-18 18:31:20.697
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-18 18:42:12.760
+!MESSAGE Classpath changed for project: user-mgmt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-18 18:42:12.803
+!MESSAGE Classpath changed for project: user-mgmt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-18 18:42:24.479
+!MESSAGE Classpath changed for project: user-mgmt
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-03-18 18:43:35.165
+!MESSAGE val.class [in org.springframework.boot [in C:\Users\mahes\.m2\repository\org\springframework\boot\spring-boot\3.4.3\spring-boot-3.4.3.jar]] does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): val.class [in org.springframework.boot [in C:\Users\mahes\.m2\repository\org\springframework\boot\spring-boot\3.4.3\spring-boot-3.4.3.jar]] does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.ClassFile.getBinaryTypeInfo(ClassFile.java:188)
+	at org.eclipse.jdt.internal.core.ClassFile.buildStructure(ClassFile.java:78)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:246)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:127)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:569)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:292)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:278)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:1142)
+	at org.eclipse.jdt.internal.core.BinaryType.getFlags(BinaryType.java:357)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.fillMemberData(JavaData.java:229)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.fillTypeDescriptorData(JavaData.java:288)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.createTypeDescriptorData(JavaData.java:283)
+	at org.springframework.tooling.jdt.ls.commons.java.TypeFluxSearch.lambda$2(TypeFluxSearch.java:41)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:107)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:112)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:287)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onNext(FluxPeekFuseable.java:495)
+	at reactor.core.publisher.FluxReplay$SizeBoundReplayBuffer.replayNormal(FluxReplay.java:811)
+	at reactor.core.publisher.FluxReplay$SizeBoundReplayBuffer.replay(FluxReplay.java:895)
+	at reactor.core.publisher.ReplayProcessor.onNext(ReplayProcessor.java:442)
+	at org.springframework.tooling.jdt.ls.commons.java.FluxJdtSearch$FluxSearchRequestor.acceptSearchMatch(FluxJdtSearch.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.report(MatchLocator.java:2183)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.reportMatching(MatchLocator.java:3136)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.reportMatching(MatchLocator.java:2855)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.process(MatchLocator.java:2038)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1308)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1388)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1531)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:143)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:276)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:620)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:677)
+	at org.springframework.tooling.jdt.ls.commons.java.FluxJdtSearch$1.run(FluxJdtSearch.java:163)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2025-03-18 18:43:35.166
+!MESSAGE val.class [in org.springframework.boot [in C:\Users\mahes\.m2\repository\org\springframework\boot\spring-boot\3.4.3\spring-boot-3.4.3.jar]] does not exist
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 4 0 2025-03-18 18:43:35.167
+!MESSAGE val.class [in org.springframework.boot [in C:\Users\mahes\.m2\repository\org\springframework\boot\spring-boot\3.4.3\spring-boot-3.4.3.jar]] does not exist
+!STACK 1
+Java Model Exception: Error in Java Model (code 969): val.class [in org.springframework.boot [in C:\Users\mahes\.m2\repository\org\springframework\boot\spring-boot\3.4.3\spring-boot-3.4.3.jar]] does not exist
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:546)
+	at org.eclipse.jdt.internal.core.ClassFile.getBinaryTypeInfo(ClassFile.java:188)
+	at org.eclipse.jdt.internal.core.ClassFile.buildStructure(ClassFile.java:78)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:246)
+	at org.eclipse.jdt.internal.core.SourceRefElement.generateInfos(SourceRefElement.java:127)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:569)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:292)
+	at org.eclipse.jdt.internal.core.JavaElement.getElementInfo(JavaElement.java:278)
+	at org.eclipse.jdt.internal.core.BinaryType.getElementInfo(BinaryType.java:1142)
+	at org.eclipse.jdt.internal.core.BinaryType.isAnnotation(BinaryType.java:797)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.fillTypeDescriptorData(JavaData.java:291)
+	at org.springframework.tooling.jdt.ls.commons.java.JavaData.createTypeDescriptorData(JavaData.java:283)
+	at org.springframework.tooling.jdt.ls.commons.java.TypeFluxSearch.lambda$2(TypeFluxSearch.java:41)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableSubscriber.onNext(FluxMapFuseable.java:107)
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableSubscriber.onNext(FluxFilterFuseable.java:112)
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:287)
+	at reactor.core.publisher.FluxPeekFuseable$PeekFuseableConditionalSubscriber.onNext(FluxPeekFuseable.java:495)
+	at reactor.core.publisher.FluxReplay$SizeBoundReplayBuffer.replayNormal(FluxReplay.java:811)
+	at reactor.core.publisher.FluxReplay$SizeBoundReplayBuffer.replay(FluxReplay.java:895)
+	at reactor.core.publisher.ReplayProcessor.onNext(ReplayProcessor.java:442)
+	at org.springframework.tooling.jdt.ls.commons.java.FluxJdtSearch$FluxSearchRequestor.acceptSearchMatch(FluxJdtSearch.java:133)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.report(MatchLocator.java:2183)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.reportMatching(MatchLocator.java:3136)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.reportMatching(MatchLocator.java:2855)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.process(MatchLocator.java:2038)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1308)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1388)
+	at org.eclipse.jdt.internal.core.search.matching.MatchLocator.locateMatches(MatchLocator.java:1531)
+	at org.eclipse.jdt.internal.core.search.JavaSearchParticipant.locateMatches(JavaSearchParticipant.java:143)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.findMatches(BasicSearchEngine.java:276)
+	at org.eclipse.jdt.internal.core.search.BasicSearchEngine.search(BasicSearchEngine.java:620)
+	at org.eclipse.jdt.core.search.SearchEngine.search(SearchEngine.java:677)
+	at org.springframework.tooling.jdt.ls.commons.java.FluxJdtSearch$1.run(FluxJdtSearch.java:163)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2025-03-18 18:43:35.167
+!MESSAGE val.class [in org.springframework.boot [in C:\Users\mahes\.m2\repository\org\springframework\boot\spring-boot\3.4.3\spring-boot-3.4.3.jar]] does not exist
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-03-18 18:43:54.728
+!MESSAGE Could not resolve completion items due to timeout after 500 milliseconds in `completionItem/resolve`
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.resolveItem(LSCompletionProposal.java:372)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:338)
+	at org.eclipse.lsp4e.operations.completion.LSCompletionProposal.getAdditionalProposalInfo(LSCompletionProposal.java:1)
+	at org.eclipse.jface.text.contentassist.AdditionalInfoController$Timer$2$1.run(AdditionalInfoController.java:116)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-18 18:44:37.694
+!MESSAGE Classpath changed for project: user-mgmt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-18 18:44:37.766
+!MESSAGE Classpath changed for project: user-mgmt
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-03-18 18:44:38.873
+!MESSAGE Classpath changed for project: user-mgmt
+
+!ENTRY org.eclipse.lsp4e 2 0 2025-03-18 19:49:22.726
+!MESSAGE Javadoc unavailable. Failed to obtain it.
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.jdt.LSJavaHoverProvider.getHoverInfo2(LSJavaHoverProvider.java:66)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:163)
+	at org.eclipse.jdt.internal.ui.text.java.hover.BestMatchHover.getHoverInfo2(BestMatchHover.java:130)
+	at org.eclipse.jdt.internal.ui.text.java.hover.JavaEditorTextHoverProxy.getHoverInfo2(JavaEditorTextHoverProxy.java:89)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
