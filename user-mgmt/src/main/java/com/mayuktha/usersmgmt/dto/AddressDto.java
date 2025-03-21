@@ -18,7 +18,7 @@ public class AddressDto {
 	private String postal_code;
 	@NotEmpty(message = "Country must not be Empty")
 	private String country;
-	private String telephone;
+	
 	@Size(min = 10,max = 10)
 	private String mobile;
 

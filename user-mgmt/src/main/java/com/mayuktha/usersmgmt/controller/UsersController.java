@@ -1,6 +1,8 @@
 package com.mayuktha.usersmgmt.controller;
 
 
+import java.util.List;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -80,13 +82,17 @@ public class UsersController {
 		
 		return ResponseEntity.ok().body(apiResponse);
 	}
-	@GetMapping(path  = "env")
+	@GetMapping(path  = "/env")
 	public ResponseEntity<Object> envVariable() {
 		return ResponseEntity.ok().body(environment.getProperty("JAVA_HOME"));
 	}
 	@GetMapping
-	public ResponseEntity hello() {
-		
-		return ResponseEntity.ok("Hello.........");
+	public ResponseEntity<Object> fetchAll() {
+		ApiResponse<List<UserDto>> apiResponse=new ApiResponse<>();
+		apiResponse.setStatusCode(HttpStatus.OK.value());
+		apiResponse.setStatus("SUCCESS");
+		List<UserDto> userList=iUsersService.fetchAllUsers();
+		apiResponse.setData(userList);
+		return ResponseEntity.ok().body(apiResponse);
 	}
 }
