@@ -1,0 +1,66 @@
+
+server:
+  port: 8081
+build:
+  version: "1.0"
+user:
+  message: "Welcome to products related local APIs "
+  contactDetails:
+    name: "Mahesh Gade - Developer"
+    email: "maheshgaade572@gmail.com"
+  onCallSupport:
+    - 8897978357
+    - 8187030639
+
+spring:
+  application:
+    name: products
+#  profiles:
+#    active: "dev"
+#  config:
+#    import: "optional:configserver:http://localhost:8888"
+    
+#    database-platform: org.hibernate.dialect.MySQLDialect
+  
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/ecommerce
+    username: root
+    password: root
+#  autoconfigure:
+#    exclude:
+#    - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
+logging:
+  level:
+    com:
+      mayuktha: DEBUG
+    '[org.springframework.web]': DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    livenessstate:
+      enabled: true
+    readinessstate:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
+    shutdown:
+      access: unrestricted
+  info:
+      env:
+       enabled: true
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://${EUREKA_HOST_NAME:localhost}:8070/eureka      
+    
