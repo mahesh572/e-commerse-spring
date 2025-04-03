@@ -1,0 +1,108 @@
+2025-04-03T15:46:25.021+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8070/eureka/apps/delta
+2025-04-03T15:46:25.021+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:46:25.037+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:46:25.037+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-04-03T15:46:25.117+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8070/eureka/apps/USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080?status=UP&lastDirtyTimestamp=1743675144829
+2025-04-03T15:46:25.117+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:46:25.133+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:46:55.059+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8070/eureka/apps/delta
+2025-04-03T15:46:55.059+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:46:55.078+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:46:55.080+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-04-03T15:46:55.154+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8070/eureka/apps/USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080?status=UP&lastDirtyTimestamp=1743675144829
+2025-04-03T15:46:55.154+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:46:55.174+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:47:25.083+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8070/eureka/apps/delta
+2025-04-03T15:47:25.083+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:47:25.100+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:47:25.100+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-04-03T15:47:25.175+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8070/eureka/apps/USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080?status=UP&lastDirtyTimestamp=1743675144829
+2025-04-03T15:47:25.175+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:47:25.193+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:47:55.108+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8070/eureka/apps/delta
+2025-04-03T15:47:55.108+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:47:55.123+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:47:55.123+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-04-03T15:47:55.203+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8070/eureka/apps/USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080?status=UP&lastDirtyTimestamp=1743675144829
+2025-04-03T15:47:55.203+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:47:55.222+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:48:23.050+05:30  INFO 15004 --- [user-mgmt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-03T15:48:25.144+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8070/eureka/apps/delta
+2025-04-03T15:48:25.145+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:48:25.164+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:48:25.164+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-04-03T15:48:25.224+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8070/eureka/apps/USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080?status=UP&lastDirtyTimestamp=1743675144829
+2025-04-03T15:48:25.224+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:48:25.240+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:48:55.181+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8070/eureka/apps/delta
+2025-04-03T15:48:55.181+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:48:55.197+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:48:55.197+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-04-03T15:48:55.260+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8070/eureka/apps/USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080?status=UP&lastDirtyTimestamp=1743675144829
+2025-04-03T15:48:55.260+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:48:55.276+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:49:25.212+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8070/eureka/apps/delta
+2025-04-03T15:49:25.212+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:49:25.232+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:49:25.232+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-04-03T15:49:25.302+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8070/eureka/apps/USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080?status=UP&lastDirtyTimestamp=1743675144829
+2025-04-03T15:49:25.309+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:49:25.318+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:49:55.239+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8070/eureka/apps/delta
+2025-04-03T15:49:55.239+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:49:55.262+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:49:55.262+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-04-03T15:49:55.334+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8070/eureka/apps/USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080?status=UP&lastDirtyTimestamp=1743675144829
+2025-04-03T15:49:55.334+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:49:55.353+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:50:25.276+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8070/eureka/apps/delta
+2025-04-03T15:50:25.276+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:50:25.296+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:50:25.296+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-04-03T15:50:25.356+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8070/eureka/apps/USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080?status=UP&lastDirtyTimestamp=1743675144829
+2025-04-03T15:50:25.356+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:50:25.375+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:50:55.301+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8070/eureka/apps/delta
+2025-04-03T15:50:55.301+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:50:55.321+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:50:55.321+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-CacheRefreshExecutor-%d] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-04-03T15:50:55.381+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : HTTP PUT http://localhost:8070/eureka/apps/USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080?status=UP&lastDirtyTimestamp=1743675144829
+2025-04-03T15:50:55.381+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:50:55.399+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-HeartbeatExecutor-%d] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:50:57.986+05:30  INFO 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-03T15:50:57.987+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-04-03T15:50:57.987+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1391a8d1, started on Thu Apr 03 15:02:10 IST 2025
+2025-04-03T15:50:57.989+05:30  INFO 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USER-MGMT with eureka with status DOWN
+2025-04-03T15:50:57.989+05:30  INFO 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1743675657989, current=DOWN, previous=UP]
+2025-04-03T15:50:57.989+05:30  INFO 15004 --- [user-mgmt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080: registering service...
+2025-04-03T15:50:57.989+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8070/eureka/apps/USER-MGMT
+2025-04-03T15:50:57.989+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:50:57.991+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = DESKTOP-QIRD43E:user-mgmt:8080, appName = USER-MGMT, hostName = DESKTOP-QIRD43E, status = DOWN, ipAddr = 192.168.1.6, port = 8080, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@6255bd7b] as "application/json"
+2025-04-03T15:50:57.994+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147482623
+2025-04-03T15:50:57.994+05:30  INFO 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-03T15:50:58.001+05:30 DEBUG 15004 --- [user-mgmt] [DiscoveryClient-InstanceInfoReplicator-%d] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2025-04-03T15:50:58.001+05:30  INFO 15004 --- [user-mgmt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080 - registration status: 204
+2025-04-03T15:50:58.037+05:30  INFO 15004 --- [user-mgmt] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-03T15:50:58.038+05:30 DEBUG 15004 --- [user-mgmt] [tomcat-shutdown] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerGracefulShutdown' completed its stop procedure
+2025-04-03T15:50:58.038+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147481599
+2025-04-03T15:50:58.041+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Bean 'webServerStartStop' completed its stop procedure
+2025-04-03T15:50:58.041+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 1073741823
+2025-04-03T15:50:58.041+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Bean 'applicationTaskExecutor' completed its stop procedure
+2025-04-03T15:50:58.041+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2025-04-03T15:50:58.041+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Successfully stopped bean 'refreshScopeLifecycle'
+2025-04-03T15:50:58.041+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147483647
+2025-04-03T15:50:58.042+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.c.support.DefaultLifecycleProcessor  : Bean 'springBootLoggingLifecycle' completed its stop procedure
+2025-04-03T15:50:58.042+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.b.f.support.DisposableBeanAdapter    : Custom destroy method 'close' on bean with name 'eurekaServiceRegistry' completed
+2025-04-03T15:50:58.044+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2025-04-03T15:50:58.045+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2025-04-03T15:50:58.045+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2025-04-03T15:50:58.048+05:30  INFO 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T15:50:58.052+05:30  INFO 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-04-03T15:50:58.073+05:30  INFO 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-04-03T15:50:58.074+05:30  INFO 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-04-03T15:51:01.087+05:30  INFO 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-04-03T15:51:01.087+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.web.client.RestTemplate              : HTTP DELETE http://localhost:8070/eureka/apps/USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080
+2025-04-03T15:51:01.087+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-04-03T15:51:01.105+05:30 DEBUG 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] o.s.web.client.RestTemplate              : Response 200 OK
+2025-04-03T15:51:01.106+05:30  INFO 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USER-MGMT/DESKTOP-QIRD43E:user-mgmt:8080 - deregister  status: 200
+2025-04-03T15:51:01.106+05:30  INFO 15004 --- [user-mgmt] [RMI TCP Connection(134)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient

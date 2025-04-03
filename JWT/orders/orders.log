@@ -1,0 +1,15 @@
+2025-04-03T15:48:05.633+05:30  INFO 19520 --- [orders] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-04-03T15:50:54.261+05:30  INFO 19520 --- [orders] [RMI TCP Connection(137)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-04-03T15:50:54.262+05:30  INFO 19520 --- [orders] [RMI TCP Connection(137)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDERS with eureka with status DOWN
+2025-04-03T15:50:54.263+05:30  INFO 19520 --- [orders] [RMI TCP Connection(137)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1743675654263, current=DOWN, previous=UP]
+2025-04-03T15:50:54.263+05:30  INFO 19520 --- [orders] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERS/DESKTOP-QIRD43E:orders:8082: registering service...
+2025-04-03T15:50:54.265+05:30  INFO 19520 --- [orders] [RMI TCP Connection(137)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-04-03T15:50:54.273+05:30  INFO 19520 --- [orders] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERS/DESKTOP-QIRD43E:orders:8082 - registration status: 204
+2025-04-03T15:50:54.311+05:30  INFO 19520 --- [orders] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-04-03T15:50:54.316+05:30  INFO 19520 --- [orders] [RMI TCP Connection(137)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-04-03T15:50:54.317+05:30  INFO 19520 --- [orders] [RMI TCP Connection(137)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown initiated...
+2025-04-03T15:50:54.326+05:30  INFO 19520 --- [orders] [RMI TCP Connection(137)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-23 - Shutdown completed.
+2025-04-03T15:50:54.327+05:30  INFO 19520 --- [orders] [RMI TCP Connection(137)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-04-03T15:50:57.327+05:30  INFO 19520 --- [orders] [RMI TCP Connection(137)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-04-03T15:50:57.346+05:30  INFO 19520 --- [orders] [RMI TCP Connection(137)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERS/DESKTOP-QIRD43E:orders:8082 - deregister  status: 200
+2025-04-03T15:50:57.347+05:30  INFO 19520 --- [orders] [RMI TCP Connection(137)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
