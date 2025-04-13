@@ -7,11 +7,13 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>3.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
+	
 	</parent>
 	<groupId>com.mayuktha.eureka</groupId>
 	<artifactId>eureka-server</artifactId>
 	<version>1.0.0</version>
 	<name>eureka-server</name>
+	<packaging>jar</packaging>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -53,6 +55,15 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -84,6 +95,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+					<image>
+						<name>8357/${project.artifactId}:1.0.0</name>
+					</image>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
@@ -96,3 +110,8 @@
 	</build>
 
 </project>
+
+
+<!-- 
+	mvn spring-boot:build-image 
+-->

@@ -1,0 +1,16 @@
+https://github.com/jenkinsci/kubernetes-plugin/blob/master/README.md
+
+
+
+Jenkins master/controller creates an agent definition (in UI or Kubernetes).
+
+Jenkins provides a secret + agent name + JNLP URL.
+
+The JNLP agent (typically in a Docker container or Kubernetes pod):
+
+Starts up
+
+Uses those credentials to connect to Jenkins over JNLP
+
+Jenkins now has a remote worker ready to execute jobs!
+

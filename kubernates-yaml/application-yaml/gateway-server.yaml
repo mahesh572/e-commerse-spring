@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gateway-server
+  labels:
+    app: gateway-server
+spec:
+  replicas: 1  # Number of desired pods
+  selector:
+    matchLabels:
+      app: gateway-server
+  template:
+    metadata:
+      labels:
+        app: gateway-server
+    spec:
+      containers:
+        - name: gateway-server
+          image: 8357/gateway-server:1.0.0
+          ports:
+            - containerPort: 8090
+          env:
+            - name: EUREKA_HOST_NAME
+              value: eureka-server
+            - name: MYSQL_HOST
+              value: mysql-service 
+            - name: DB_USERNAME
+              value: mahesh
+            - name: DB_PASSWORD
+              value: mahesh            
+            
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: gateway-server
+spec:
+  selector:
+    app: gateway-server
+  ports:
+    - protocol: TCP
+      port: 8090
+      targetPort: 8090
+  type: NodePort

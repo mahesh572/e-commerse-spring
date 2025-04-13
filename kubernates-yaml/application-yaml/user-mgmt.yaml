@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-mgmt
+  labels:
+    app: user-mgmt
+spec:
+  replicas: 1  # Number of desired pods
+  selector:
+    matchLabels:
+      app: user-mgmt
+  template:
+    metadata:
+      labels:
+        app: user-mgmt
+    spec:
+      containers:
+        - name: user-mgmt
+          image: 8357/user-mgmt:1.0.0
+          ports:
+            - containerPort: 8080
+          env:
+            - name: EUREKA_HOST_NAME
+              value: eureka-server
+            - name: MYSQL_HOST
+              value: mysql-service 
+            - name: DB_USERNAME
+              value: mahesh
+            - name: DB_PASSWORD
+              value: mahesh   
+            
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: user-mgmt
+spec:
+  selector:
+    app: user-mgmt
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+    # Can be NodePort or ClusterIP depending on your setup

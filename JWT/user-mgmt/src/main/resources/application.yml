@@ -1,26 +1,44 @@
 server:
-  port: 8080
+  port: 8081
 spring:
   application:
-    name: user-mgmt
+    name: products
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
   datasource:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/ecommerce
-    username: root
-    password: root
-#  autoconfigure:
-#    exclude:
-#    - org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration
-logging:
-  level:
-    com.mayuktha.usersmgmt.*: DEBUG
-  file:
-    name: user-mgmt.log
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+  cloud:
+    aws:
+      credentials:
+        access-key: AKIAVY2PHCGUJF7BDZLW
+        secret-key: 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
+      region:
+        static: ap-south-1
+      s3:
+        enabled: true
 eureka:
   client:
     register-with-eureka: true
     service-url:
       defaultZone: http://${EUREKA_HOST_NAME:localhost}:8761/eureka
+  instance:
+    prefer-ip-address: true
+    hostname:  products
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    prometheus:
+      enabled: true
+
+  prometheus:
+    metrics:
+      export:
+        enabled: true

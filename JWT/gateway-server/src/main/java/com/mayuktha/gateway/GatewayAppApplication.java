@@ -32,44 +32,28 @@ public class GatewayAppApplication {
 		JwtAuthenticationFilter jwtfilter = new JwtAuthenticationFilter();
 		return routeLocatorBuilder.routes()
 				
-				.route(p -> p.path("/auth/login/**").and().method(HttpMethod.POST)
+				.route("user-mgmt",p -> p.path("/auth/login/**").and().method(HttpMethod.POST)
 						
 						.uri("lb://USER-MGMT")
 						
 						)
-				.route(p -> p.path("/auth/register/**").and().method(HttpMethod.POST)
+				.route("user-mgmt",p -> p.path("/auth/register/**").and().method(HttpMethod.POST)
 						
 						.uri("lb://USER-MGMT")
 						
 						)
-								
-				
-				.route(p -> p.path("/orders/**").and().method(HttpMethod.GET).or().method(HttpMethod.POST)
-						.or().method(HttpMethod.PUT)
-						.or().method(HttpMethod.DELETE)
-						
+				.route("user-mgmt",p -> p.path("/users/**")
 						.filters( f -> f.filter(jwtfilter)
 								.addResponseHeader("X-Response-Time", LocalDateTime.now().toString()
 										)
-								)
-						
-						.uri("lb://ORDERS")
-						
-						)
-						.route(p -> p.path("/users/**")
-								.filters( f -> f.filter(jwtfilter)
-										.addResponseHeader("X-Response-Time", LocalDateTime.now().toString()
-												)
-										
-										)
-								.uri("lb://USER-MGMT")
 								
 								)
+						.uri("lb://USER-MGMT")
 						
-						.route(p -> p.path("/category/**","/product/**").and().method(HttpMethod.GET).or().method(HttpMethod.POST)
-								.or().method(HttpMethod.PUT)
-								.or().method(HttpMethod.DELETE)
-								
+						)				
+				
+						.route("products",p -> p.path("/category/**","/product/**").and().method(HttpMethod.GET,HttpMethod.POST,HttpMethod.PUT,HttpMethod.DELETE)
+															
 								.filters( f -> f.filter(jwtfilter)
 										.addResponseHeader("X-Response-Time", LocalDateTime.now().toString()
 												)
@@ -78,7 +62,16 @@ public class GatewayAppApplication {
 								.uri("lb://PRODUCTS")
 								
 								)
-						
+						.route("orders",p -> p.path("/orders/**").and().method(HttpMethod.GET,HttpMethod.POST,HttpMethod.PUT,HttpMethod.DELETE)
+								
+								.filters( f -> f.filter(jwtfilter)
+										.addResponseHeader("X-Response-Time", LocalDateTime.now().toString()
+												)
+										)
+								
+								.uri("lb://ORDERS")
+								
+								)
 						
 						.build();
 					

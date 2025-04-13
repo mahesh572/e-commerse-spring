@@ -3,11 +3,13 @@ server:
 eureka:
   instance:
     prefer-ip-address: true
+    hostname:  gateway-server
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
       defaultZone: http://${EUREKA_HOST_NAME:localhost}:8761/eureka
+  
       
       
 spring:
@@ -25,8 +27,8 @@ spring:
     show-sql: true
   datasource:
     url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/ecommerce
-    username: root
-    password: root
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
 management:
   endpoints:
     web:
@@ -35,7 +37,18 @@ management:
   endpoint:
     gateway:
       access: unrestricted
+    prometheus:
+      enabled: true
+  prometheus:
+    metrics:
+      export:
+        enabled: true 
   info:
     env:
       enabled: true
-
+logging:
+  level:
+    root: info
+    com.mayuktha.gateway: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"

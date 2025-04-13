@@ -1,0 +1,32 @@
+controller:
+  serviceAccount:
+    create: true
+    name: jenkins
+  jenkinsUrl: http://jenkins:8080
+  jenkinsAdminUser: admin
+  jenkinsAdminPassword: "admin" # Change this in production!
+  installPlugins:
+    - kubernetes
+    - workflow-aggregator
+    - git
+    - docker-workflow
+  resources:
+    requests:
+      cpu: "500m"
+      memory: "512Mi"
+    limits:
+      cpu: "1000m"
+      memory: "1024Mi"
+  serviceType: NodePort
+agent:
+  enabled: true
+  resources:
+    requests:
+      cpu: "200m"
+      memory: "256Mi"
+    limits:
+      cpu: "500m"
+      memory: "512Mi"
+rbac:
+  create: true
+namespaceOverride: jenkins

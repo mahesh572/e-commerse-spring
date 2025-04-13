@@ -12,6 +12,7 @@
 	<artifactId>orders</artifactId>
 	<version>1.0.0</version>
 	<name>orders</name>
+	<packaging>jar</packaging>
 	<description>orders</description>
 	<url/>
 	<licenses>
@@ -82,6 +83,15 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-openfeign</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>io.micrometer</groupId>
+			<artifactId>micrometer-registry-prometheus</artifactId>
+			<scope>runtime</scope>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
@@ -113,6 +123,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
+				    <image>
+						<name>8357/${project.artifactId}:1.0.0</name>
+					</image>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
