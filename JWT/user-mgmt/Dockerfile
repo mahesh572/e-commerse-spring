@@ -23,4 +23,5 @@ FROM eclipse-temurin:17-jdk-alpine
 WORKDIR /opt/demo
 COPY --from=stage1 /opt/demo/target/user-mgmt-1.0.0.jar /opt/user-mgmt-1.0.0.jar
 EXPOSE 8761
-ENTRYPOINT ["java","-jar","/opt/eureka-server-1.0.0.jar"]
+ADD https://github.com/open-telemetry/opentelemetry-java-instrumentation/releases/download/v2.11.0/opentelemetry-javaagent.jar /app/libs/opentelemetry-javaagent.jar
+ENTRYPOINT ["java", "-javaagent:/app/libs/opentelemetry-javaagent.jar", "-jar", "/opt/user-mgmt-1.0.0.jar"]

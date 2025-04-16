@@ -27,4 +27,21 @@ eureka:
       defaultZone: http://${EUREKA_HOST_NAME:localhost}:8761/eureka
   instance:
     prefer-ip-address: true
-    hostname:  products
+    hostname:  ${spring.application.name}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+  endpoint:
+    prometheus:
+      enabled: true
+
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+logging:
+  pattern:
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"

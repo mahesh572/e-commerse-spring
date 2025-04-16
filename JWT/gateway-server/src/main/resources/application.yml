@@ -3,7 +3,7 @@ server:
 eureka:
   instance:
     prefer-ip-address: true
-    hostname:  gateway-server
+    hostname:  ${spring.application.name}
   client:
     register-with-eureka: true
     fetch-registry: true
@@ -46,9 +46,26 @@ management:
   info:
     env:
       enabled: true
+  tracing:
+    enabled: true
+    sampling:
+      probability: 1.0
+  otlp:
+    tracing:
+      endpoint: http://otel-collector:4317
+      protocol: grpc
+    metrics:
+      export:
+        enabled: false
+  metrics:
+    tags:
+      application: ${spring.application.name}
 logging:
   level:
     root: info
-    com.mayuktha.gateway: DEBUG
+    com:
+      mayuktha:
+        gateway: DEBUG
   pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"
+    level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"
+

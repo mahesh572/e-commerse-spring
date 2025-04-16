@@ -1,8 +1,13 @@
 spring:
   application:
     name: eureka-server
+  threads:
+    virtual:
+      enabled: true
+
 server:
   port: 8761
+
 eureka:
   instance:
     hostname: ${EUREKA_HOST_NAME:localhost}
@@ -11,17 +16,31 @@ eureka:
     register-with-eureka: false
     service-url:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
 management:
   endpoints:
     web:
       exposure:
-        include:
-        - prometheus
+        include: "*"
   endpoint:
     prometheus:
       enabled: true
-  
   prometheus:
     metrics:
       export:
         enabled: true
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  tracing:
+    propagation:
+      type:
+      - W3C
+      - B3
+  web:
+    server:
+      request:
+        trace: true
+logging:
+   pattern:
+      level: "%5p [${spring.application.name},%X{trace_id},%X{span_id}]"

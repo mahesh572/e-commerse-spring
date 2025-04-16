@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-otel-to-tempo
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      app: tempo
+  policyTypes:
+  - Ingress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          app: otel-collector
+    ports:
+    - protocol: TCP
+      port: 5317  # Your custom port
+    - protocol: TCP
+      port: 4317  # Keep default if needed
