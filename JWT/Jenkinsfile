@@ -1,0 +1,69 @@
+pipeline {
+    agent any
+
+    environment {
+        GIT_CREDENTIALS = credentials('Git-Hub')
+        DOCKER_CREDS = credentials('docker-hub')
+        DOCKER_HUB = "8357"
+    }
+
+    stages {
+        stage('Checkout from GitHub') {
+            steps {
+                git branch: 'main', 
+                    url: 'https://github.com/mahesh572/e-commerse-spring.git',
+                    credentialsId: 'Git-Hub'
+            }
+        }
+
+        stage('Build and Push Docker Images') {
+            steps {
+                script {
+                    dir('JWT') {
+                        def pomFiles = findFiles(glob: '**/pom.xml', excludes: '**/target/**')
+                        echo "Found ${pomFiles.size()} pom.xml files"
+                        
+                        pomFiles.each { pomFile ->
+                            def pomPath = pomFile.path.replace('/', '\\')
+                            def moduleDir = pomPath.substring(0, pomPath.lastIndexOf('\\'))
+                            
+                            dir(moduleDir) {
+                                // First build the project to ensure pom.properties exists
+                                bat 'mvn -B clean install'
+                                
+                                // Read artifact info from generated pom.properties
+                                def props = readProperties file: 'target/maven-archiver/pom.properties'
+                                def artifactId = props.get('artifactId')
+                                def version = props.get('version')
+                                
+                                echo "Building ${artifactId}:${version}"
+                                
+                                // Build and push Docker image
+                               // Build Docker image
+                                bat """
+                                    mvn spring-boot:build-image -Dspring-boot.build-image.imageName=${DOCKER_HUB}/${artifactId}:${version}
+                                """
+                                
+                                // Login and push (separate step for better error handling)
+								echo "docker login and pushing mahesh......"
+                                bat """
+                                    echo %DOCKER_CREDS_PSW% | docker login -u %DOCKER_CREDS_USR% --password-stdin
+                                    docker push ${DOCKER_HUB}/${artifactId}:${version}
+                                    docker logout
+                                """
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+	post {
+        always {
+            script {
+                // Clean up Docker credentials even if build fails
+                bat 'docker logout'
+            }
+        }
+    }
+}
