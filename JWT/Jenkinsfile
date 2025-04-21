@@ -29,7 +29,7 @@ pipeline {
                             
                             dir(moduleDir) {
                                 // First build the project to ensure pom.properties exists
-                                bat 'mvn -B clean install'
+                                sh 'mvn -B clean install'
                                 
                                 // Read artifact info from generated pom.properties
                                 def props = readProperties file: 'target/maven-archiver/pom.properties'
@@ -40,13 +40,13 @@ pipeline {
                                 
                                 // Build and push Docker image
                                // Build Docker image
-                                bat """
+                                sh """
                                     mvn spring-boot:build-image -Dspring-boot.build-image.imageName=${DOCKER_HUB}/${artifactId}:${version}
                                 """
                                 
                                 // Login and push (separate step for better error handling)
 								echo "docker login and pushing mahesh......"
-                                bat """
+                                sh """
                                     echo %DOCKER_CREDS_PSW% | docker login -u %DOCKER_CREDS_USR% --password-stdin
                                     docker push ${DOCKER_HUB}/${artifactId}:${version}
                                     docker logout
@@ -62,7 +62,7 @@ pipeline {
         always {
             script {
                 // Clean up Docker credentials even if build fails
-                bat 'docker logout'
+                sh 'docker logout'
             }
         }
     }
